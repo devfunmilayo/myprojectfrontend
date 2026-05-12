@@ -169,8 +169,8 @@ const Buyer = () => {
     const fetchDbProducts = async () => {
       try {
         const token = localStorage.getItem("mercova_token");
-        const res = await fetch(
-          import.meta.env.VITE_API_URL/seller/all-products,
+       const res = await fetch(
+  `${import.meta.env.VITE_API_URL}/seller/all-products`,
           {
             headers: { Authorization: `Bearer ${token}` },
           },
@@ -209,7 +209,7 @@ const Buyer = () => {
   const handleSubscribe = async () => {
     if (!subEmail) return;
     const res = await fetch(
-      import.meta.env.VITE_API_URL/newsletter/subscribe,
+  `${import.meta.env.VITE_API_URL}/newsletter/subscribe`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
