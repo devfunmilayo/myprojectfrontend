@@ -44,9 +44,9 @@ const LandingPage = () => {
           <button onClick={() => navigate("/getstarted")} class="bg-[#003ec7] text-white py-3 px-6 rounded-xl font-semibold">
             Start Selling Now
           </button>
-          <button class="bg-[#e2e3e4] text-black py-3 px-6 rounded-xl font-semibold">
+          {/* <button class="bg-[#e2e3e4] text-black py-3 px-6 rounded-xl font-semibold">
             Explore Marketplace
-          </button>
+          </button> */}
         </div>
       </div>
 
