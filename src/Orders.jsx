@@ -123,7 +123,7 @@ const Orders = () => {
       try {
         const token = localStorage.getItem("mercova_token");
         const res = await fetch(
-          import.meta.env.VITE_API_URL/orders/my-purchases,
+  `${import.meta.env.VITE_API_URL}/orders/my-purchases`,
           {
             headers: { Authorization: `Bearer ${token}` },
           },

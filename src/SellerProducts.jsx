@@ -20,8 +20,8 @@ const SellerProducts = () => {
     const fetch_ = async () => {
       try {
         const token = localStorage.getItem("mercova_token");
-        const res = await fetch(
-          "import.meta.env.VITE_API_URL/seller/products",
+       const res = await fetch(
+  `${import.meta.env.VITE_API_URL}/seller/products`,
           {
             headers: { Authorization: `Bearer ${token}` },
           },
