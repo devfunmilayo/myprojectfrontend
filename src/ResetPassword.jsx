@@ -28,17 +28,16 @@ const ResetPassword = () => {
         .oneOf([yup.ref("password")], "Passwords must match"),
     }),
 
-    onSubmit: async (values, { setSubmitting, setErrors }) => {
-      try {
-        const res = await fetch(
-          `import.meta.env.VITE_API_URL/auth/reset-password/${id}/${token}`,
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ password: values.password }),
-          },
-        );
-
+   onSubmit: async (values, { setSubmitting, setErrors }) => {
+  try {
+    const res = await fetch(
+      `${import.meta.env.VITE_API_URL}/auth/reset-password/${id}/${token}`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: values.password }),
+      },
+    );
         const data = await res.json();
 
         if (!res.ok) throw new Error(data.message);

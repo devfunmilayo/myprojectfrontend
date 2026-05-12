@@ -152,11 +152,11 @@ const Productdetail = () => {
       try {
         const token = localStorage.getItem("mercova_token");
         const res = await fetch(
-          `import.meta.env.VITE_API_URL/seller/product/${id}`,
-          {
-            headers: { Authorization: `Bearer ${token}` },
-          },
-        );
+  `${import.meta.env.VITE_API_URL}/seller/product/${id}`,
+  {
+    headers: { Authorization: `Bearer ${token}` },
+  },
+);
         const data = await res.json();
         if (res.ok) {
           setProduct(data);

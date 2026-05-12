@@ -42,12 +42,12 @@ const SellerProducts = () => {
     try {
       const token = localStorage.getItem("mercova_token");
       const res = await fetch(
-        `import.meta.env.VITE_API_URL/seller/products/${id}`,
-        {
-          method: "DELETE",
-          headers: { Authorization: `Bearer ${token}` },
-        },
-      );
+  `${import.meta.env.VITE_API_URL}/seller/products/${id}`,
+  {
+    method: "DELETE",
+    headers: { Authorization: `Bearer ${token}` },
+  },
+);
       if (!res.ok) throw new Error("Could not delete");
       setProducts((prev) => prev.filter((p) => p._id !== id));
       setDeleteId(null);

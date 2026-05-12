@@ -51,7 +51,7 @@ const Checkout = () => {
     try {
       const token = localStorage.getItem("mercova_token");
       for (const item of cartItems) {
-        await fetch("import.meta.env.VITE_API_URL/orders", {
+        await fetch(import.meta.env.VITE_API_URL/orders, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

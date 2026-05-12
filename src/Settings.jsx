@@ -4,7 +4,7 @@ import { useAuth } from "./AuthContext";
 import { useFormik } from "formik";
 import * as yup from "yup";
 
-const BASE_URL = "import.meta.env.VITE_API_URL";
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 const navItems = [
   {
