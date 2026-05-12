@@ -3,7 +3,7 @@ import * as yup from "yup";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-const ForgotPassword = () => {
+const Forgotpassword = () => {
   const navigate = useNavigate();
   const [submitted, setSubmitted] = useState(false);
 
@@ -150,4 +150,4 @@ const ForgotPassword = () => {
   );
 };
 
-export default ForgotPassword;
+export default Forgotpassword;

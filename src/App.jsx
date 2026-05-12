@@ -8,7 +8,7 @@ import LandingPage    from './LandingPage';
 import Login          from './Login';
 import SignUp         from './SignUp';
 import NotFound       from './NotFound';
-import ForgotPassword from './ForgotPassword';
+import Forgotpassword from './Forgotpassword';
 import ResetPassword  from './ResetPassword';
 
 import Welcome        from './Welcome';
@@ -35,7 +35,7 @@ function App() {
           <Route path="/"                         element={<LandingPage />} />
           <Route path="/getstarted"               element={<SignUp />} />
           <Route path="/login"                    element={<Login />} />
-          <Route path="/forgot-password"          element={<ForgotPassword />} />
+          <Route path="/forgot-password"          element={<Forgotpassword />} />
           <Route path="/reset-password/:id/:token" element={<ResetPassword />} />
 
           {/* ── Buyer ── */}
