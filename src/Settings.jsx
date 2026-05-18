@@ -525,7 +525,7 @@ const Settings = () => {
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4">
           <div className="bg-white rounded-2xl p-8 max-w-sm w-full shadow-xl">
             <div className="text-center mb-6">
-              <div className="text-4xl mb-3">👋</div>
+              <div className="text-4xl mb-3"></div>
               <h3 className="text-lg font-extrabold text-gray-900 mb-2">
                 Log out of Mercova?
               </h3>

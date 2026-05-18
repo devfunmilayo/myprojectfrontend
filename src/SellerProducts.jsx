@@ -15,7 +15,7 @@ const SellerProducts = () => {
     setTimeout(() => setToast(""), 3000);
   };
 
-  // ── Fetch seller's products ────────────────────────────────────────────────
+
   useEffect(() => {
     const fetch_ = async () => {
       try {
@@ -37,7 +37,7 @@ const SellerProducts = () => {
     fetch_();
   }, []);
 
-  // ── Delete product ─────────────────────────────────────────────────────────
+ 
   const handleDelete = async (id) => {
     try {
       const token = localStorage.getItem("mercova_token");
